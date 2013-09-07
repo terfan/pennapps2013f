@@ -11,39 +11,20 @@
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/bus.js"></script>
 
-		  <script src="https://googledrive.com/host/0B4ZBZOYYKBzETkFqdnhMeV9fMzA" ></script>
-    <script src="https://googledrive.com/host/0B4ZBZOYYKBzEZTdBSFdUV19LYjQ" type="text/javascript"></script>
     <script>
 var imgArray = new Array();
+
 imgArray[0] = new Image();
-imgArray[0].src = 'https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg';
+imgArray[0].src = 'images/Bus1.gif';
 
 imgArray[1] = new Image();
-imgArray[1].src = 'https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg';
+imgArray[1].src = 'images/Bus1LOOP.gif';
 
 imgArray[2] = new Image();
-imgArray[2].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus1.gif?w=AAD2QMrRHpoJT6goLtaxlbMSNTes3sHUN4zDOKoNci8ozA';
+imgArray[2].src = 'images/Bus2.gif';
 
 imgArray[3] = new Image();
-imgArray[3].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus1LOOP.gif?w=AABC5z8zXdZDX9sPSphQu6i5j4rJo2qrYqpgU-aRkskDmA';
-
-imgArray[4] = new Image();
-imgArray[4].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus2.gif?w=AACrufXiP3HJHlAYueosjSzgR-TfdAFVoKDDGE0LroUGYg';
-
-imgArray[5] = new Image();
-imgArray[5].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus2LOOP.gif?w=AAAGkDDJ6ueBu0TR4merRBnC_g0Hhc6LW_zJyZ5_xD4HJQ';
-
-imgArray[6] = new Image();
-imgArray[6].src = 'struggle7.gif';
-
-imgArray[7] = new Image();
-imgArray[7].src = 'struggle8.gif';
-
-imgArray[8] = new Image();
-imgArray[8].src = 'struggle9.gif';
-
-imgArray[9] = new Image();
-imgArray[9].src = 'struggle10.gif';
+imgArray[3].src = 'images/Bus2LOOP.gif';
 
 
 var i=0;
@@ -62,9 +43,9 @@ function addtext(){
     }
     
 function putgif(gif1, gif2) {
-    $("#bus_container img").attr('src', 'gif1');
-    $("#bus_container img").attr('src', 'gif1').delay(2000);
-    $("#bus_container img").attr('src', 'gif1').hide().delay(2000);
+    $("#bus_container").attr('src', 'gif1.src');
+    $("#bus_container").attr('src', 'gif1.src').delay(2000);
+    $("#bus_container").attr('src', 'gif1.src').hide().delay(2000);
     }
     </script>
 
@@ -96,12 +77,12 @@ function putgif(gif1, gif2) {
 	            		<td>
 	            			<div id="list_of_struggles"></div>
 	            		</td>
+	            		<td>
+	            			<img id="bus_container" src="images/bus-gif-start.gif">
+	            		</td>
 	            	</tr>
 	            </tbody>
 	        </table>
-<div class="bus_container">
-<img src="https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg">
-</div>
 	            
 		</div>
 
