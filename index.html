@@ -12,39 +12,38 @@
 		<script type="text/javascript" src="js/bus.js"></script>
 
 		<script>
-		var imgArray = new Array();
+			var imgArray = new Array();
 
-imgArray[0] = new Image();
-imgArray[0].src = 'images/Bus1.gif';
+			imgArray[0] = new Image();
+			imgArray[0].src = 'images/Bus1.gif';
 
-imgArray[1] = new Image();
-imgArray[1].src = 'images/Bus1LOOP.gif';
+			imgArray[1] = new Image();
+			imgArray[1].src = 'images/Bus1LOOP.gif';
 
-imgArray[2] = new Image();
-imgArray[2].src = 'images/Bus2.gif';
+			imgArray[2] = new Image();
+			imgArray[2].src = 'images/Bus2.gif';
 
-imgArray[3] = new Image();
-imgArray[3].src = 'images/Bus2LOOP.gif';
+			imgArray[3] = new Image();
+			imgArray[3].src = 'images/Bus2LOOP.gif';
 
 
-var i=0;
+			var i=0;
 
-function putgif(gif1, gif2) {
-    $("#bus_container img").attr('src', 'gif1');
-    $("#bus_container img").attr('src', 'gif1').delay(800);
-    $("#bus_container img").attr('src', 'gif1').hide().delay(800);
-    } 	
+			function putgif(gif1, gif2) {
+    			$("#bus_container img").attr('src', 'gif1');
+    			$("#bus_container img").attr('src', 'gif1').delay(800);
+    			$("#bus_container img").attr('src', 'gif1').hide().delay(800);
+    		} 	
 		
-	function addtext(){   
-   		var inp = document.getElementById('input').value; 
-   		if (inp==="") return;
-    		inp =  '<p>'+inp+'</p>';
-     		$(inp).appendTo('#list_of_struggles');
-     		document.getElementById('input').value = "";
-     		 i+=2;
-     		putgif(imgArray(i),imgArray(i+1));
+			function addtext() {   
+   				var inp = document.getElementById('input').value; 
+   				if (inp==="") return;
+    			inp =  '<p>'+inp+'</p>';
+     			$(inp).appendTo('#list_of_struggles');
+     			document.getElementById('input').value = "";
+     			i+=2;
+     			putgif(imgArray(i),imgArray(i+1));
     		}
-    		
     		
     	</script>
 
@@ -78,7 +77,7 @@ function putgif(gif1, gif2) {
 	            		</td>
 
 	            		<td>
-	            			<img src="images/Bus1.gif" >
+	            			<img src="images/bus-gif-start.gif" >
 	            		</td>
 	            	</tr>
 	            </tbody>
