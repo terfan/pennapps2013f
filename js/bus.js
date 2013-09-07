@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	function showMessage1() {
 		$(".message1").fadeIn(1500);
-		$(".message1").delay(50);
-		$(".message1").fadeOut(1500, showMessage2());
+		$(".message1").delay(200);
+		$(".message1").fadeOut(800, showMessage2());
 	}
 
 	function showMessage2() {
@@ -38,15 +38,12 @@ $(document).ready(function() {
   		next.fadeIn();
 	}
 	
-	var i=0;
 /*input list-->input and input-enter*/
 
 function addtext(){   
    var inp = document.getElementById('input').value;   
-    i++;
-    inp =  '<p>'+inp+'</p>';
+    //inp =  inp;
      $(inp).appendTo('#list_of_struggles');
-        $("#bus_container").css('background-img', imgArray[i]);
     }
 
 

@@ -11,6 +11,14 @@ h1 {
 	font-size: 50px;
 }
 
+h2 {
+	color: #19d8e6;
+	font-family: 'Actor', sans-serif;
+	font-size: 30px;
+	padding-left: 2%;
+	margin-top: 2%;
+}
+
 p {
 	padding: 5%;
 	margin-right: 20px;
@@ -50,4 +58,19 @@ img {
 	background: #ffffff;
 	margin: auto;
     overflow: hidden;
+}
+
+#input {
+	display: inline;
+}
+
+#list_of_struggles p {
+	font-family: 'Actor', sans-serif;
+	font-size: 20px;
+	padding: 5px;
+	margin: 0;
+}
+
+table {
+	width: 50%;
 }
