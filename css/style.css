@@ -47,7 +47,11 @@ img {
 #main {
 	width: 100%;
 	height: 100%;
-	background: #ffffff;
+	background: #19d8e6;
 	margin: auto;
     overflow: hidden;
+}
+
+#main img {
+	width: 800px;
 }
