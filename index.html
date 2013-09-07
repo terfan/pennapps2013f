@@ -36,7 +36,8 @@ function putgif(gif1, gif2) {
     } 	
 		
 	function addtext(){   
-   		var inp = document.getElementById('input').value;   
+   		var inp = document.getElementById('input').value; 
+   		if (inp==="") return;
     		inp =  '<p>'+inp+'</p>';
      		$(inp).appendTo('#list_of_struggles');
      		document.getElementById('input').value = "";
