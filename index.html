@@ -28,14 +28,12 @@ imgArray[3].src = 'images/Bus2LOOP.gif';
 
 
 var i=0;
-/*input list-->input and input-enter*/
-
-function addtext(){
      
-     var strug =  $( "#list_of_struggles" ).append($( "<p>" ));
-     strug.append($(input));
-     strug.append($("<p>"));
-     i+=2;
+    function addtext(){   
+   var inp = document.getElementById('input').value;   
+     $(inp).appendTo('#list_of_struggles');
+    
+i+=2;
      putgif(imgArray(i),imgArray(i+1));
   /*  $("#input-list:nth-child(i+1)").show(); //show the next thing in the list
     $("#bus_container").css('background-img', imgArray[i]);*/
