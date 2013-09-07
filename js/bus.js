@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
 
 	function showMessage1() {
@@ -38,6 +37,17 @@ $(document).ready(function() {
   		next.css("visibility", "visible");
   		next.fadeIn();
 	}
+	
+	var i=0;
+/*input list-->input and input-enter*/
+
+function addtext(){   
+   var inp = document.getElementById('input').value;   
+    i++;
+    inp =  '<p>'+inp+'</p>';
+     $(inp).appendTo('#list_of_struggles');
+        $("#bus_container").css('background-img', imgArray[i]);
+    }
 
 
 });
