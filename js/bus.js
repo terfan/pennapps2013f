@@ -42,7 +42,6 @@ $(document).ready(function() {
 
 function addtext(){   
    var inp = document.getElementById('input').value;   
-    //inp =  inp;
      $(inp).appendTo('#list_of_struggles');
     }
 
