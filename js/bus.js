@@ -15,6 +15,20 @@ $(document).ready(function() {
 
 	showMessage1();
 
+	$(".message2").hover(
+		function() {
+			var $this = $(this);
+			$this
+				.data("prehovercolor", $this.css('color'))
+    			.css('color', '#fff141');
+  		},
+  		function() {
+  			var $this = $(this);
+  			$this
+  				.css('color',$this.data('prehovercolor'));
+  		}
+  	);
+
 	$(".message2").click(function(e) {
     	slideScreen($("#welcome"), $("#main"));
   	});
