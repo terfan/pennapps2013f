@@ -11,14 +11,62 @@
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/bus.js"></script>
 
-		<script>
-			function addtext(){   
-   				var inp = document.getElementById('input').value;   
-    			inp =  '<p>'+inp+'</p>';
-     			$(inp).appendTo('#list_of_struggles');
-     			document.getElementById('input').value = "";
-    		}
-    	</script>
+		  <script src="https://googledrive.com/host/0B4ZBZOYYKBzETkFqdnhMeV9fMzA" ></script>
+    <script src="https://googledrive.com/host/0B4ZBZOYYKBzEZTdBSFdUV19LYjQ" type="text/javascript"></script>
+    <script>
+var imgArray = new Array();
+imgArray[0] = new Image();
+imgArray[0].src = 'https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg';
+
+imgArray[1] = new Image();
+imgArray[1].src = 'https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg';
+
+imgArray[2] = new Image();
+imgArray[2].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus1.gif?w=AAD2QMrRHpoJT6goLtaxlbMSNTes3sHUN4zDOKoNci8ozA';
+
+imgArray[3] = new Image();
+imgArray[3].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus1LOOP.gif?w=AABC5z8zXdZDX9sPSphQu6i5j4rJo2qrYqpgU-aRkskDmA';
+
+imgArray[4] = new Image();
+imgArray[4].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus2.gif?w=AACrufXiP3HJHlAYueosjSzgR-TfdAFVoKDDGE0LroUGYg';
+
+imgArray[5] = new Image();
+imgArray[5].src = 'https://dl-web.dropbox.com/get/struggle%20bus/Bus2LOOP.gif?w=AAAGkDDJ6ueBu0TR4merRBnC_g0Hhc6LW_zJyZ5_xD4HJQ';
+
+imgArray[6] = new Image();
+imgArray[6].src = 'struggle7.gif';
+
+imgArray[7] = new Image();
+imgArray[7].src = 'struggle8.gif';
+
+imgArray[8] = new Image();
+imgArray[8].src = 'struggle9.gif';
+
+imgArray[9] = new Image();
+imgArray[9].src = 'struggle10.gif';
+
+
+var i=0;
+/*input list-->input and input-enter*/
+
+function addtext(){
+     
+     var strug =  $( "#list_of_struggles" ).append($( "<p>" ));
+     strug.append($(input));
+     strug.append($("<p>"));
+     i+=2;
+     putgif(imgArray(i),imgArray(i+1));
+  /*  $("#input-list:nth-child(i+1)").show(); //show the next thing in the list
+    $("#bus_container").css('background-img', imgArray[i]);*/
+    
+    }
+    
+function putgif(gif1, gif2) {
+    $("#bus_container img").attr('src', 'gif1');
+    $("#bus_container img").attr('src', 'gif1').delay(2000);
+    $("#bus_container img").attr('src', 'gif1').hide().delay(2000);
+    }
+    </script>
 
 	</head>
 
@@ -48,14 +96,13 @@
 	            		<td>
 	            			<div id="list_of_struggles"></div>
 	            		</td>
-
-	            		<td>
-	            			<img src="images/Bus1.gif" >
-	            		</td>
 	            	</tr>
 	            </tbody>
 	        </table>
-  
+<div class="bus_container">
+<img src="https://dl-web.dropbox.com/get/struggle%20bus/bus-gif-start.gif?w=AABVAlh_g_bDEee6-sQnJz66O1Ww6ZmvRc7Z8vhpA-LuFg">
+</div>
+	            
 		</div>
 
 	</body>
