@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
-		
+
 		<title>The Struggle Bus</title>
 
 		<!-- CSS -->
@@ -11,41 +11,14 @@
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/bus.js"></script>
 
-    <script>
-var imgArray = new Array();
-
-imgArray[0] = new Image();
-imgArray[0].src = 'images/Bus1.gif';
-
-imgArray[1] = new Image();
-imgArray[1].src = 'images/Bus1LOOP.gif';
-
-imgArray[2] = new Image();
-imgArray[2].src = 'images/Bus2.gif';
-
-imgArray[3] = new Image();
-imgArray[3].src = 'images/Bus2LOOP.gif';
-
-
-var i=0;
-     
-    function addtext(){   
-   var inp = document.getElementById('input').value;   
-     $(inp).appendTo('#list_of_struggles');
-    
-i+=2;
-     putgif(imgArray(i),imgArray(i+1));
-  /*  $("#input-list:nth-child(i+1)").show(); //show the next thing in the list
-    $("#bus_container").css('background-img', imgArray[i]);*/
-    
-    }
-    
-function putgif(gif1, gif2) {
-    $("#bus_container").attr('src', 'gif1.src');
-    $("#bus_container").attr('src', 'gif1.src').delay(2000);
-    $("#bus_container").attr('src', 'gif1.src').hide().delay(2000);
-    }
-    </script>
+		<script>
+			function addtext(){   
+   				var inp = document.getElementById('input').value;   
+    			inp =  '<p>'+inp+'</p>';
+     			$(inp).appendTo('#list_of_struggles');
+     			document.getElementById('input').value = "";
+    		}
+    	</script>
 
 	</head>
 
@@ -75,13 +48,14 @@ function putgif(gif1, gif2) {
 	            		<td>
 	            			<div id="list_of_struggles"></div>
 	            		</td>
+
 	            		<td>
-	            			<img id="bus_container" src="images/bus-gif-start.gif">
+	            			<img src="images/Bus1.gif" >
 	            		</td>
 	            	</tr>
 	            </tbody>
 	        </table>
-	            
+  
 		</div>
 
 	</body>
