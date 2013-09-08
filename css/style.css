@@ -9,6 +9,7 @@ h1 {
 	color: #ffffff;
 	font-family: 'Actor', sans-serif;
 	font-size: 50px;
+	padding-left: 10%;
 }
 
 h2 {
@@ -99,8 +100,10 @@ h5 {
 	font-family: 'Actor', sans-serif;
 	font-size: 80px;
 	position: center;
+	margin: auto;
 }
 
-#endmessage: hover {
+.endmessage:hover {
 	cursor: pointer;
+	color: #fff141;
 }
