@@ -32,6 +32,12 @@
 			imgArray[5] = new Image();
 			imgArray[5].src = 'images/Bus3LOOP.gif';
 
+			imgArray[6] = new Image();
+			imgArray[6] = 'images/Bus4.gif';
+
+			imgArray[7] = new Image();
+			imgArray[7] = 'images/Bus4LOOP.gif';
+
 
 			var i=0;
 
@@ -41,11 +47,11 @@
     			$("#bus_container").delay(3500).queue(function() {
     			$(this).attr('src', gif2);
     			})
-    			if (i>5) { //whatever last image is--run it through and go to end screen
+    			/*if (i>) { //whatever last image is--run it through and go to end screen
 					$("#bus_container").hide();
 					$("#end").show();
 
-				}
+				}*/
     		} 	
 		
 			function addtext() {   
@@ -92,7 +98,7 @@
 	            		</td>
 
 	            		<td>
-	            			<img id="bus_container" src="images/bus-gif-start.gif">
+	            			<img id="bus_container" src="images/Bus0LOOP.gif">
 	            			<div id="end"><h3>Too Many Struggles</h3></div>
 	            		</td>
 	            	</tr>
