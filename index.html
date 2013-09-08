@@ -36,11 +36,16 @@
 			var i=0;
 
 			function putgif(gif1, gif2) {
+
     			$("#bus_container").attr('src', gif1);
     			$("#bus_container").delay(3500).queue(function() {
-    				$(this).attr('src', gif2);
+    			$(this).attr('src', gif2);
     			})
-    			//$("#bus_container").attr('src', gif1).hide().delay(800);
+    			if (i>5) { //whatever last image is--run it through and go to end screen
+					$("#bus_container").hide();
+					$("#end").show();
+
+				}
     		} 	
 		
 			function addtext() {   
@@ -50,8 +55,9 @@
      			$(inp).appendTo('#list_of_struggles');
      			document.getElementById('input').value = "";
      			putgif(imgArray[i].src,imgArray[i+1].src);
+   
      			i+=2;
-
+     			
     		}
     		
     	</script>
@@ -87,6 +93,7 @@
 
 	            		<td>
 	            			<img id="bus_container" src="images/bus-gif-start.gif">
+	            			<div id="end"><h3>Too Many Struggles</h3></div>
 	            		</td>
 	            	</tr>
 	            </tbody>
