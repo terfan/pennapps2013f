@@ -4,11 +4,12 @@ $(document).ready(function() {
 	function showMessage1() {
 		$(".message1").fadeIn(1500);
 		$(".message1").delay(200);
-		$(".message1").fadeOut(800, showMessage2());
+		//$(".message1").fadeOut(800, showMessage2());
+    showMessage2();
 	}
 
 	function showMessage2() {
-		$(".message2").delay(2000)
+		$(".message2").delay(1000)
 		$(".message2").fadeIn(1500);
 	}
 
@@ -37,6 +38,11 @@ $(document).ready(function() {
   		next.css("visibility", "visible");
   		next.fadeIn();
 	}
+
+  $(".endmessage").click(function(e) {
+    location.reload();
+  });
+
 	
 /*input list-->input and input-enter*/
 

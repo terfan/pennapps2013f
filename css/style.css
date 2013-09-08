@@ -72,5 +72,35 @@ img {
 }
 
 #end {
+	width: 100%;
+	height: 100%;
 	display: none;
+	background: #19d8e6;
+	margin: auto;
+	overflow: hidden;
+}
+
+#end p {
+	text-align: center;
+	color: #ffffff;
+}
+
+h5 {
+	color: #ffffff;
+	font-family: 'Actor', sans-serif;
+	font-size: 15px;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+#overload {
+	color: #19d8e6;
+	font-family: 'Actor', sans-serif;
+	font-size: 80px;
+	position: center;
+}
+
+#endmessage: hover {
+	cursor: pointer;
 }

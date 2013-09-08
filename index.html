@@ -33,19 +33,20 @@
 			imgArray[5].src = 'images/Bus3LOOP.gif';
 
 			imgArray[6] = new Image();
-			imgArray[6] = 'images/Bus4.gif';
+			imgArray[6].src = 'images/Bus4.gif';
 
 			imgArray[7] = new Image();
-			imgArray[7] = 'images/Bus4LOOP.gif';
+			imgArray[7].src = 'images/Bus4LOOP.gif';
 
 
 			var i=0;
 
 			function putgif(gif1, gif2) {
-
+				console.log("GIF1: ", gif1, ", ", "GIF2: ", gif2)
     			$("#bus_container").attr('src', gif1);
     			$("#bus_container").delay(3500).queue(function() {
-    			$(this).attr('src', gif2);
+    				$(this).attr('src', gif2);
+    				$(this).dequeue();
     			})
     			/*if (i>) { //whatever last image is--run it through and go to end screen
 					$("#bus_container").hide();
@@ -53,19 +54,33 @@
 
 				}*/
     		} 	
+
+    		function slideScreen(curr, next) {
+  				curr.hide();
+  				next.css("visibility", "visible");
+  				next.fadeIn();
+			}
 		
-			function addtext() {   
+			function addtext() {
+				if(i==8){
+					//$("#end").show();
+					$("#bus_container").hide();
+					$("form").hide();
+					slideScreen($("#main"), $("#end"));
+
+				}
+	
+
    				var inp = document.getElementById('input').value; 
-   				if (inp=="") return;
-    			inp =  '<p>'+inp+'</p>';
+   				if (inp == "") return;
+    			inp = '<p>'+inp+'</p>';
      			$(inp).appendTo('#list_of_struggles');
      			document.getElementById('input').value = "";
-     			putgif(imgArray[i].src,imgArray[i+1].src);
+     			putgif(imgArray[i].src, imgArray[i+1].src);
    
-     			i+=2;
-     			
+     			i+=2;     			
     		}
-    		
+
     	</script>
 
 	</head>
@@ -98,13 +113,20 @@
 	            		</td>
 
 	            		<td>
-	            			<img id="bus_container" src="images/Bus0LOOP.gif">
-	            			<div id="end"><h3>Too Many Struggles</h3></div>
+	            			<img id="bus_container" src="images/Bus0LOOP.gif"/>
 	            		</td>
 	            	</tr>
 	            </tbody>
 	        </table>
+
   
+		</div>
+
+		<!-- end -->
+		<div id="end">
+			<p id="overload">TOO MANY STRUGGLES</p>
+			<h5>Created by Becca, Grace, Stefanie, and Teresa for PennApps Fall 2013</h5>
+			<p><h1 class="endmessage">Start over. >></h1></p>
 		</div>
 
 	</body>
